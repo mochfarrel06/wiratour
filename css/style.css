@@ -47,9 +47,10 @@ header{
 }
 
 .logo{
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-weight: 700;
     color: var(--main-color);
+    text-transform: uppercase;
 }
 
 .navbar{
@@ -77,6 +78,170 @@ header{
     background: black;
 }
 
+#menu-icon{
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+}
+
 /* End header */
 
 /* Start home */
+section{
+    padding: 50px 10%;
+}
+
+.home{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.home-img img{
+    width: 100%;
+}
+
+.home-text h1{
+    font-size: var(--big-font);
+    color: var(--main-color);
+}
+
+.home-text h3{
+    font-size: var(--h3-font);
+    margin: 1rem 0 1rem;
+}
+
+.btn{
+    display: inline-block;
+    background: var(--main-color);
+    padding: 10px 20px;
+    border-radius: 0.5rem;
+    color: var(--bg-color);
+}
+
+.btn:hover{
+    background: #03261f;
+}
+
+/* Slider */
+
+.slider{
+    height: 380px;
+    overflow: hidden;
+}
+
+.slides{
+    width: 500%;
+    height: 500px;
+    display: flex;
+}
+
+.slides input{
+    display: none;
+}
+
+.home-img{
+    width: 20%;
+}
+
+.home-img img{
+    width: 100%;
+}
+
+.navigation-manual{
+    position: absolute;
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    right: 0;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -20%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -40%;
+}
+
+#radio4:checked ~ .first{
+    margin-left: -60%;
+}
+
+/* Auto */
+.navigation-auto{
+    position: absolute;
+    display: flex;
+    width: 800px;
+    justify-content: center;
+    right: 0;
+    margin-top: 500px;
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+/* End Home */
+
+/* Start about */
+.about{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1.5rem;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.about-img img{
+    max-width: 80%;
+}
+
+.about-text h2{
+    font-size: var(--h2-font);
+    margin-bottom: 20px;
+}
+
+.about-text p{
+    margin: 0.8rem 0 0.8rem 0;
+}
+
+
+@media(max-width: 1100px){
+    .logo{
+        color: red;
+    }
+    
+    #menu-icon{
+        display: initial;
+        color: var(--text-color);
+    }
+
+    header .navbar{
+        position: absolute;
+        top: -600px;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        background: var(--bg-color);
+        box-shadow: 0 4px 4px rgb(0 0 0 / 10%);
+        transition: 0.2s ease;
+    }
+
+    .navbar.active{
+        top: 100%;
+    }
+
+    .navbar a{
+        padding: 1.5rem;
+        display: block;
+    }
+}
