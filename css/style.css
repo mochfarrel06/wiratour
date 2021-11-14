@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root{
+    --main-color: #064B3E;
+    --text-color: #261C2C;
+    --bg-color: #F3F1F5;
+
+    --big-font: 4rem;
+    --h2-font: 2.24rem;
+    --h3-font: 1.4rem;
+    --p-font: 0.9rem;
+}
+
+*::selection{
+    background: var(--main-color);
+}
+
+body{
+    color: var(--text-color);
+    background: var(--bg-color);
+}
+
+/* Start header */
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--bg-color);
+    padding: 18px 100px;
+    box-shadow: 0 0.5rem 50rem rgba(0, 0, 0, 0.1);
+}
+
+.logo{
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--main-color);
+}
+
+.navbar{
+    display: flex;
+}
+
+.navbar a{
+    color: var(--text-color);
+    font-size: 1rem;
+    padding: 10px 20px;
+    font-weight: 500;
+}
+
+.navbar a:hover{
+    color: var(--main-color);
+}
+
+.navbar .login{
+    background: var(--main-color);
+    border-radius: 10px;
+    color: #fff;
+}
+
+.navbar .login:hover{
+    background: black;
+}
+
+/* End header */
+
+/* Start home */
