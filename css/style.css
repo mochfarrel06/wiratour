@@ -217,6 +217,7 @@ section{
     font-size: var(--p-font);
 }
 
+
 /*Rent*/
 .rent-container {
     display: flex;
@@ -246,6 +247,7 @@ section{
     height: 300px;
     margin: 10px;
     border-radius: 40px;
+    position: relative;
 }
 
 .card-rent h2{
@@ -260,60 +262,61 @@ section{
   }
   
 .car-1 {
+    background-image: url(../images/mobil1.png);
     background-size: cover;
     max-height: 150px;
     
-  }
+}
   
 .car-2 {
-    background-image: url(images/Group\ 12.png);
+    background-image: url(../images/mobil1.png);
     background-size: cover;
     max-height: 150px;
     
-  }
+}
   
 .car-3{
-    background-image: url(images/avanza.png);
+    background-image: url(../images/mobil1.png);
     background-size: cover;
     max-height: 150px;
-  }
+}
   
 .car-4{
-    background-image: url(images/innova.png);
+    background-image: url(../images/mobil3.png);
     background-size: cover;
     max-height: 150px;
   }
 .car-5{
-    background-image: url(images/xenia.png);
+    background-image: url(../images/mobil1.png);
     background-size: cover;
     max-height: 150px;
 }
 .car-6{
-    background-image: url(images/sigra.png);
+    background-image: url(../images/mobil3.png);
     background-size: cover;
     max-height: 150px;
   }
 .car-7{
-    background-image: url(images/calya.png);
+    background-image: url(../images/mobil3.png);
     background-size: cover;
     max-height: 150px;
   }
 .car-8{
-    background-image: url(images/luxio.png);
+    background-image: url(../images/mobil1.png);
     background-size: cover;
     max-height: 150px;
   }
-  .car-9{
-    background-image: url(images/ayla.png);
+.car-9{
+    background-image: url(../images/mobil3.png);
     background-size: cover;
     max-height: 150px;
-  }
-  .car-10{
-    background-image: url(images/agya.png);
+}
+.car-10{
+    background-image: url(../images/mobil3.png);
     background-size: cover;
     max-height: 150px;
-  }
-  .card-rent a{
+}
+.card-rent a{
     background-color: #1CC201;
     margin-top: 20px;
     text-decoration: none;
@@ -322,19 +325,21 @@ section{
     display: flex;
     justify-content: center;
     font-weight: 600;
-  }
-  .card-rent:hover{
+}
+.card-rent:hover{
     transform: scale(1.075);
     transition: 0.3s ease-in;
     cursor: pointer;
-  }
-  .card-rent a:hover{
+}
+.card-rent a:hover{
     background-color: var(--text-color);
     color: #1CC201;
-  }
+}
+
+/* End Rent */
 
   /*FAQS*/
-.box{
+.faqs1{
     width: 470px;
     margin: 10px auto;
     background: #000;
@@ -342,41 +347,44 @@ section{
     margin-top: 30px;
     border: 1px solid #fff;
   }
-  .faqhead{
+.faqhead{
       font-size: 50px;
       text-align: center;
       font-weight: bold;
   }
-  .box .heading{
+.faqs1 .heading{
     background: #000;
     padding: 10px;
     color: #fff;
     text-align: center;
     height: 100px;
   }
-  .faqs{
+.faqs{
     padding: 10px 20px;
     
   }
-  ::-webkit-details-marker{
+::-webkit-details-marker{
     float: right;
     margin-top: 3px;
   }
-  .details{
+.details{
     background: #000;
     padding: 10px;
     border-radius: 10px;
     margin-top: 20px;
     color: #fff;
   }
-  .drop{
+.drop{
       color: gray;
   }
-  summary{
+summary{
   outline: none;
   font-size: 25px;
   font-weight: bold;
   }
+/* End Faqs */
+
+
 /*Testi*/
 .testimoni-container{
     display: flex;
