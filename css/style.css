@@ -326,6 +326,52 @@ section{
     color: #1CC201;
   }
 
+  /*FAQS*/
+.box{
+    width: 470px;
+    margin: 10px auto;
+    background: #000;
+    border-radius: 20px;
+    margin-top: 30px;
+    border: 1px solid #fff;
+  }
+  .faqhead{
+      font-size: 50px;
+      text-align: center;
+      font-weight: bold;
+  }
+  .box .heading{
+    background: #000;
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+    height: 100px;
+  }
+  .faqs{
+    padding: 10px 20px;
+    
+  }
+  ::-webkit-details-marker{
+    float: right;
+    margin-top: 3px;
+  }
+  .details{
+    background: #000;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+    color: #fff;
+  }
+  .drop{
+      color: gray;
+  }
+  summary{
+  outline: none;
+  font-size: 25px;
+  font-weight: bold;
+  }
+
+
 
 @media(max-width: 1100px){
     #menu-icon{
