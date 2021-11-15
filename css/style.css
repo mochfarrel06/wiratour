@@ -370,7 +370,80 @@ section{
   font-size: 25px;
   font-weight: bold;
   }
+/*Testi*/
+.testimoni-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: white;
+    color: #000;
+  }
+  .card-tes {
+    background: #fff;
+    width: 300px;
+    height: 400px;
+    margin: 10px;
+    border-radius: 40px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    border: solid 1px #fff;
 
+  }
+
+  .card-tes p{
+    text-align: left;
+    padding: 3px 3px;
+    color: gray;
+  }
+  .card-tes h2{
+    font-weight: bolder;
+  }
+  .tes-1 img {
+    max-width: 70px;
+    max-height: 70px;
+  }
+  .tes-2 img{
+    max-width: 70px;
+    max-height: 70px;
+  }
+  .tes-3 img{
+    max-width: 70px;
+    max-height: 70px;
+  }
+  .stars{
+    color: #1CC201;
+  }
+  
+  .starss{
+    color: #1CC201;
+    margin-top: 22px;
+  }
+  .starsss{
+    color: #1CC201;
+    margin-top: 110px;
+  }
+  .stars2{
+    color: #1CC201;
+    margin-top: 22px;
+  }
+  .stars3{
+    color: #1CC201;
+    margin-top: 29px;
+  }
+  .stars4{
+    color: #1CC201;
+    margin-top: 29px;
+  }
+  
+  .carousel-cell {
+    width: 100%;
+    }
+
+    /* cell number */
+    .carousel-cell:before {
+      display: block;
+    }
 
 
 @media(max-width: 1100px){
