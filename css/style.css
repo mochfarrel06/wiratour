@@ -216,6 +216,116 @@ section{
     font-size: var(--p-font);
 }
 
+/*Rent*/
+.rent-container {
+    display: flex;
+    justify-content: center;
+    background-color: #000;
+    flex-wrap: wrap;
+    color: #fff;
+  }
+  .armada{
+    font-size: 50px;
+    margin-top: 20px;
+    font-weight: bolder;
+  }
+
+.green{
+    color: #1CC201;
+    
+}
+.armadap{
+    text-align: center;
+    margin-bottom: 30px;
+}
+  .card-rent {
+    background: #000;
+    width: 220px;
+    height: 300px;
+    margin: 10px;
+    border-radius: 40px;
+  }
+  .card-rent h2{
+    font-weight: bold;
+  }
+  .card-image-rent {
+    background-color: #000;
+    height: 170px;
+    margin-bottom: 15px;
+    border-radius: 40px 40px 0 0;
+  }
+  .car-1 {
+    background-image: url(images/Group\ 11.png);
+    background-size: cover;
+    max-height: 150px;
+    
+  }
+  .car-2 {
+    background-image: url(images/Group\ 12.png);
+    background-size: cover;
+    max-height: 150px;
+    
+  }
+  .car-3{
+    background-image: url(images/avanza.png);
+    background-size: cover;
+    max-height: 150px;
+  }
+  .car-4{
+    background-image: url(images/innova.png);
+    background-size: cover;
+    max-height: 150px;
+  }
+  .car-5{
+    background-image: url(images/xenia.png);
+    background-size: cover;
+    max-height: 150px;
+  }
+  .car-6{
+    background-image: url(images/sigra.png);
+    background-size: cover;
+    max-height: 150px;
+  }
+  .car-7{
+    background-image: url(images/calya.png);
+    background-size: cover;
+    max-height: 150px;
+  }
+  .car-8{
+    background-image: url(images/luxio.png);
+    background-size: cover;
+    max-height: 150px;
+  }
+  .car-9{
+    background-image: url(images/ayla.png);
+    background-size: cover;
+    max-height: 150px;
+  }
+  .car-10{
+    background-image: url(images/agya.png);
+    background-size: cover;
+    max-height: 150px;
+  }
+  .card-rent a{
+    background-color: #1CC201;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #000;
+    padding: 10px 10px;
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+  }
+  .card-rent:hover{
+    transform: scale(1.075);
+    transition: 0.3s ease-in;
+    cursor: pointer;
+  }
+  .card-rent a:hover{
+    background-color: #000;
+    color: #1CC201;
+  }
+
 
 @media(max-width: 1100px){
     #menu-icon{
