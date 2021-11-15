@@ -194,6 +194,7 @@ section{
 }
 /* End Home */
 
+
 /* Start about */
 .about{
     display: grid;
@@ -220,9 +221,9 @@ section{
 .rent-container {
     display: flex;
     justify-content: center;
-    background-color: #000;
+    background-color: var(--text-color);
     flex-wrap: wrap;
-    color: #fff;
+    color: var(--bg-color);
   }
   .armada{
     font-size: 50px;
@@ -231,67 +232,73 @@ section{
   }
 
 .green{
-    color: #1CC201;
+    color: var(--main-color);
     
 }
 .armadap{
     text-align: center;
     margin-bottom: 30px;
 }
-  .card-rent {
-    background: #000;
+
+.card-rent {
+    background: var(--text-color);
     width: 220px;
     height: 300px;
     margin: 10px;
     border-radius: 40px;
-  }
-  .card-rent h2{
+}
+
+.card-rent h2{
     font-weight: bold;
-  }
-  .card-image-rent {
-    background-color: #000;
+}
+  
+.card-image-rent {
+    background-color: var(--text-color);
     height: 170px;
     margin-bottom: 15px;
     border-radius: 40px 40px 0 0;
   }
-  .car-1 {
-    background-image: url(images/Group\ 11.png);
+  
+.car-1 {
     background-size: cover;
     max-height: 150px;
     
   }
-  .car-2 {
+  
+.car-2 {
     background-image: url(images/Group\ 12.png);
     background-size: cover;
     max-height: 150px;
     
   }
-  .car-3{
+  
+.car-3{
     background-image: url(images/avanza.png);
     background-size: cover;
     max-height: 150px;
   }
-  .car-4{
+  
+.car-4{
     background-image: url(images/innova.png);
     background-size: cover;
     max-height: 150px;
   }
-  .car-5{
+.car-5{
     background-image: url(images/xenia.png);
     background-size: cover;
     max-height: 150px;
-  }
-  .car-6{
+}
+.car-6{
     background-image: url(images/sigra.png);
     background-size: cover;
     max-height: 150px;
   }
-  .car-7{
+.car-7{
     background-image: url(images/calya.png);
     background-size: cover;
     max-height: 150px;
   }
-  .car-8{
+.car-8{
     background-image: url(images/luxio.png);
     background-size: cover;
     max-height: 150px;
@@ -310,7 +317,7 @@ section{
     background-color: #1CC201;
     margin-top: 20px;
     text-decoration: none;
-    color: #000;
+    color: var(--text-color);
     padding: 10px 10px;
     display: flex;
     justify-content: center;
@@ -322,7 +329,7 @@ section{
     cursor: pointer;
   }
   .card-rent a:hover{
-    background-color: #000;
+    background-color: var(--text-color);
     color: #1CC201;
   }
 
