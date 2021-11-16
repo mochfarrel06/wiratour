@@ -68,20 +68,56 @@ header{
     color: var(--main-color);
 }
 
-.navbar .login{
-    background: var(--main-color);
-    border-radius: 10px;
-    color: #fff;
-}
 
-.navbar .login:hover{
-    background: black;
-}
-
-#menu-icon{
-    font-size: 2rem;
-    cursor: pointer;
+/* Menu hambuger */
+.menu-toggler{
     display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 20px;
+    position: relative;
+}
+
+.menu-toggler input{
+    position: absolute;
+    width: 40px;
+    height: 28px;
+    left: -6px;
+    top: -3px;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 99;
+}
+
+.menu-toggler span{
+    display: block;
+    background-color: black;
+    width: 28px;
+    height: 3px;
+    border-radius: 3px;
+}
+
+.menu-toggler span:nth-child(2){
+    transform-origin: 0 0;
+}
+
+.menu-toggler span:nth-child(4){
+    transform-origin: 0 100%;
+}
+
+.menu-toggler input:checked ~ span:nth-child(2){
+    background-color: #707070;
+    transform: rotate(45deg) translate(-1px, -1px);
+}
+
+.menu-toggler input:checked ~ span:nth-child(4){
+    background-color: #707070;
+    transform: rotate(-45deg) translate(-1px, 0);
+}
+
+.menu-toggler input:checked ~ span:nth-child(3){
+    opacity: 0;
+    transform: scale(0);
 }
 
 /* End header */
@@ -97,7 +133,7 @@ section{
     grid-template-columns: repeat(2,1fr);
     align-items: center;
     gap: 1.5rem;
-    min-height: 100vh;
+    min-height: 90vh;
 }
 
 .home-img img{
@@ -201,7 +237,7 @@ section{
     grid-template-columns: repeat(2,1fr);
     gap: 1.5rem;
     align-items: center;
-    min-height: 100vh;
+    min-height: 70vh;
 }
 
 .about-img img{
@@ -322,12 +358,12 @@ section{
     max-height: 150px;
   }
 .car-9{
-    background-image: url(../images/ayla.png);
+    background-image: url(../images/mobil1.png);
     background-size: cover;
     max-height: 150px;
 }
 .car-10{
-    background-image: url(../images/agya.png);
+    background-image: url(../images/mobil1.png);
     background-size: cover;
     max-height: 150px;
 }
@@ -358,7 +394,7 @@ section{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-height: 100vh;
+    min-height: 80vh;
 }
 
 .faqs-text{
@@ -564,33 +600,31 @@ section{
 }
 
 @media(max-width: 1100px){
-    #menu-icon{
-        display: initial;
-        color: var(--text-color);
+    .menu-toggler{
+        display: flex;
     }
 
     header .navbar{
         position: absolute;
-        top: -600px;
-        left: 0;
+        top: 0;
         right: 0;
-        display: flex;
+        height: 80vh;
+        width: 100%;
         flex-direction: column;
-        text-align: center;
-        background: var(--bg-color);
-        box-shadow: 0 4px 4px rgb(0 0 0 / 10%);
-        transition: 0.2s ease;
+        align-items: center;
+        justify-content: space-evenly;
+        z-index: 0;
+        background-color: var(--bg-color);
+        transform: translateX(100%);
+        transition: all 1s;
+        opacity: 0;
     }
 
-    .navbar.active{
-        top: 100%;
+    header .navbar.slide{
+        opacity: 1;
+        transform: translateX(0);
     }
-
-    .navbar a{
-        padding: 1.5rem;
-        display: block;
-    }
-
+    
     :root{
         --big-font: 3rem;
         --h2-font: 1.7rem;
@@ -599,6 +633,15 @@ section{
 
     .home-text h1{
         transition: 1s ease;
+    }
+    .home{
+        min-height: 60vh;
+    }
+    .about{
+        min-height: 40vh;
+    }
+    .slider{
+        height: 270px;
     }
 }
 
@@ -619,6 +662,25 @@ section{
     .home-text h1{
         font-size: 2rem;
     }
+    .home{
+        min-height: 50vh;
+        align-items: center;
+    }
+    .slider{
+        height: 220px;
+    }
+    .about{
+        min-height: 40vh;
+    }
+    .rent-car{
+        justify-content: space-around;
+    }
+    .faqs{
+        min-height: 50vh;
+    }
+    .testi{
+        min-height: 80vh;
+    }
 }
 
 @media(max-width: 715px){
@@ -628,6 +690,10 @@ section{
     .home{
         grid-template-columns: 1fr;
     }
+
+    .home-img img{
+        width: 55%;
+    }
     .about{
         grid-template-columns: 1fr;
         text-align: center;
@@ -635,6 +701,13 @@ section{
     .about-img{
         order: 2;
     }
+    .slider{
+        height: 200px;
+    }
+    .about-img img{
+        max-width: 50%;
+    }
+
 }
 
 @media(max-width: 450px){
@@ -652,10 +725,16 @@ section{
     .about-text p, h2{
         text-align: left;
     }
-    section#home{
-        max-height: 50vh;
+    .home{
+        min-height: 10vh;
+    }
+    .about{
+        min-height: 10vh;
     }
     .home-img img{
         width: 80%;
+    }
+    .slider{
+        height: 200px;
     }
 }
