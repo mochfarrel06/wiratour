@@ -513,11 +513,15 @@ section{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, auto));
     gap: 1.5rem;
-    background: #D9D8DA;
+    background: var(--text-color);
 }
 
 .contact-box h3{
     margin-bottom: 1rem;
+    color: #D9D8DA;
+}
+.contact-box{
+    color: #D9D8DA;
 }
 
 .social{
@@ -528,19 +532,19 @@ section{
 .social i{
     font-size: 20px;
     margin-right: 1rem;
-    color: var(--text-color);
+    color: #D9D8DA; 
 }
 
 .social i:hover{
-    color: var(--main-color);
+    color: #1CC201;
 }
 
 .contact-box li a{
-    color: var(--text-color);
+    color: #D9D8DA;
 }
 
 .contact-box li a:hover{
-    color: var(--main-color);
+    color: #1CC201;
 }
 
 .address{
