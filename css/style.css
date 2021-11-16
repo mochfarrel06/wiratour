@@ -69,13 +69,14 @@ header{
 }
 
 .navbar .login{
-    background: var(--main-color);
+    background: #1CC201;
     border-radius: 10px;
     color: #fff;
 }
 
 .navbar .login:hover{
     background: black;
+    color: white;
 }
 
 #menu-icon{
@@ -277,7 +278,7 @@ section{
   }
   
 .car-1 {
-    background-image: url(../images/mobil1.png);
+    background-image: url(../images/a2.png);
     background-size: cover;
     max-height: 150px;
     
@@ -330,6 +331,7 @@ section{
     background-image: url(../images/agya.png);
     background-size: cover;
     max-height: 150px;
+    background-color: var(--text-color);
 }
 .card-rent a{
     background-color: #1CC201;
