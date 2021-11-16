@@ -223,25 +223,35 @@ section{
 /*Rent*/
 .rent-container {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
     background-color: var(--text-color);
-    flex-wrap: wrap;
     color: var(--bg-color);
     min-height: 100vh;
   }
-  .armada{
-    font-size: 50px;
+
+.rent-text h2{
+    font-size: var(--h2-font);
     margin-top: 20px;
     font-weight: bolder;
-  }
+    text-align: center;
+}
+
+.rent-text p{
+    font-size: var(--p-font);
+    font-weight: 500;
+    text-align: center;
+}
 
 .green{
     color: var(--main-color);
     
 }
-.armadap{
-    text-align: center;
-    margin-bottom: 30px;
+
+.rent-car{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
 }
 
 .card-rent {
@@ -253,8 +263,9 @@ section{
     position: relative;
 }
 
-.card-rent h2{
+.card-rent h3{
     font-weight: bold;
+    font-size: var(--h3-font);
 }
   
 .card-image-rent {
@@ -320,7 +331,7 @@ section{
     max-height: 150px;
 }
 .card-rent a{
-    background-color: #1CC201;
+    background-color: var(--main-color);
     margin-top: 20px;
     text-decoration: none;
     color: var(--text-color);
@@ -340,8 +351,6 @@ section{
 }
 
 /* End Rent */
-
-
 
 /*FAQS*/
 .faqs{
@@ -414,39 +423,40 @@ section{
 
 
 /*Testi*/
-/* .testi-text{
+.testi{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.testi-text{
     text-align: center;
+    margin-bottom: 60px;
 }
 
 .testi-text h2{
     font-size: var(--h2-font);
-    color: violet;
-} */
-
-.testi h2{
-    font-size: 2rem;
     color: var(--main-color);
-    text-align: center;    
 }
 
 .testimoni-container{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    background-color: white;
-    color: #000;
+    background-color: var(--bg-color);
+    color: var(--text-color);
     /* min-height: 100vh; */
 }
 .card-tes {
-    background: #fff;
+    background: var(--bg-color);
     width: 300px;
     height: 400px;
-    margin: 10px;
     border-radius: 40px;
     justify-content: center;
     text-align: center;
     align-items: center;
-    border: solid 1px #fff;
+    border: solid 1px var(--bg-color);
+    position: relative;
 
 }
 
@@ -454,65 +464,46 @@ section{
     text-align: left;
     padding: 3px 3px;
     color: gray;
+    font-style: italic;
+    font-size: 0.9rem;
+    opacity: 0.6;
 }
   
-.card-tes h2{
+.card-tes h3{
     font-weight: bolder;
+    font-size: var(--h3-font);
+    color: var(--text-color);
+    margin: 10px 10px;
 }
   
-.tes-1 img {
-    max-width: 70px;
-    max-height: 70px;
-}
-  
-.tes-2 img{
-    max-width: 70px;
-    max-height: 70px;
-}
-  
-.tes-3 img{
-    max-width: 70px;
-    max-height: 70px;
+.card-image-tes img{
+    max-width: 100px;
+    max-height: 100px;
+    background-position: center;
 }
   
 .stars{
-    color: #1CC201;
-}
-  
-.starss{
-    color: #1CC201;
-    margin-top: 22px;
-}
-  
-.starsss{
-    color: #1CC201;
-    margin-top: 110px;
+    position: absolute;
+    top: 350px;
+    right: 100px;
 }
 
-.stars2{
-    color: #1CC201;
-    margin-top: 22px;
+.stars i{
+    color: #ffd344;
 }
-  
-.stars3{
-    color: #1CC201;
-    margin-top: 29px;
-}
-  
-.stars4{
-    color: #1CC201;
-    margin-top: 29px;
-}
-  
 
 .carousel-cell {
     width: 100%;
-    }
+}
 
-    /* cell number */
-    .carousel-cell:before {
-      display: block;
-    }
+/* cell number */
+.carousel-cell:before {
+    display: block;
+}
+
+/* Akhir testi */
+
+
 
 /* Start contact */
 .contact{
@@ -647,7 +638,7 @@ section{
 
 @media(max-width: 450px){
     :root{
-        --big-font: 1.8rem;
+        --big-font: 1.7rem;
         --h2-font: 1.4rem;
         --p-font: 0.7rem;
     }
@@ -659,5 +650,11 @@ section{
     }
     .about-text p, h2{
         text-align: left;
+    }
+    section#home{
+        max-height: 50vh;
+    }
+    .home-img img{
+        width: 80%;
     }
 }
