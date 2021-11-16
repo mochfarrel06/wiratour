@@ -120,7 +120,7 @@ section{
 
 .btn{
     display: inline-block;
-    background: var(--main-color);
+    background: #1CC201;
     padding: 10px 20px;
     border-radius: 0.5rem;
     color: var(--bg-color);
@@ -244,7 +244,7 @@ section{
 }
 
 .green{
-    color: var(--main-color);
+    color: #1CC201;
     
 }
 
@@ -322,17 +322,17 @@ section{
     max-height: 150px;
   }
 .car-9{
-    background-image: url(../images/mobil3.png);
+    background-image: url(../images/ayla.png);
     background-size: cover;
     max-height: 150px;
 }
 .car-10{
-    background-image: url(../images/mobil3.png);
+    background-image: url(../images/agya.png);
     background-size: cover;
     max-height: 150px;
 }
 .card-rent a{
-    background-color: var(--main-color);
+    background-color: #1CC201;
     margin-top: 20px;
     text-decoration: none;
     color: var(--text-color);
