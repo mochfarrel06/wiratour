@@ -98,7 +98,7 @@ section{
     grid-template-columns: repeat(2,1fr);
     align-items: center;
     gap: 1.5rem;
-    min-height: 100vh;
+    min-height: 90vh;
 }
 
 .home-img img{
@@ -202,7 +202,7 @@ section{
     grid-template-columns: repeat(2,1fr);
     gap: 1.5rem;
     align-items: center;
-    min-height: 100vh;
+    min-height: 90vh;
 }
 
 .about-img img{
