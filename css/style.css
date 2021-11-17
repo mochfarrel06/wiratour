@@ -461,7 +461,55 @@ section{
 
 /* End Faqs */
 
-
+/*pros*/
+.heading-pros h1 {
+    justify-content: center;
+    display: flex;
+    padding-top: 100px;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    font-size: 50px;
+    margin-top: -50px;
+  }
+  .pros-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    
+  }
+ 
+  .card-pros {
+    background-color: white;
+    color: black;
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+    border-radius: 10px;
+  
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+    padding: 5px 5px;
+  }
+  .card-pros h2 {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .card-pros p {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .card-pros:hover{
+    background-color: black;
+    color: white;
+    transition: 0.3s all ease;
+  }
 
 /*Testi*/
 .testi{
@@ -576,7 +624,7 @@ section{
     border-radius: 50%;
     background-size: cover;
     background-image: url(../images/whatsapp-logo-png-2283.png);
-    margin: 0px 30px;
+    margin: -30px 40px;
     
 }
 
@@ -649,6 +697,10 @@ section{
     text-align: center;
 }
 
+.highlight{
+    border-bottom: 6px solid #1CC201;
+    margin-bottom: 2px;
+  }
 @media(max-width: 1100px){
     .menu-toggler{
         display: flex;
