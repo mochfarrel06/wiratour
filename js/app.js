@@ -10,18 +10,6 @@ setInterval(function(){
     }
 }, 5000);
 
-// Navigation
-const menu = document.querySelector('#menu-icon');
-const navbar = document.querySelector('.navbar');
-
-menu.onclick = () => {
-    navbar.classList.toggle('active');
-}
-
-window.onscroll = () => {
-    navbar.classList.remove('active');
-}
-
 // Faqs
 const accor = document.querySelectorAll(".accordion-item-header");
 
@@ -41,4 +29,12 @@ accor.forEach(accorItems => {
             accorbody.style.maxHeight = 0;
         }
     });
+});
+
+// navbar
+const menuToggle = document.querySelector('.menu-toggler input');
+const nav = document.querySelector('header .navbar');
+
+menuToggle.addEventListener('click', function(){
+    nav.classList.toggle('slide');
 });
