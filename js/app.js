@@ -13,34 +13,52 @@ setInterval(function(){
 // Show active menu when scrolling
 const highlightMenu = () => {
     const elem = document.querySelector('.highlight');
-    const homeMenu = document.querySelector('#home-page');
-    const aboutMenu = document.querySelector('#about-page');
-    const servicesMenu = document.querySelector('#services-page');
-    const teamMenu = document.querySelector('#team-page');
+    const homeMenu = document.querySelector('#h-page');
+    const aboutMenu = document.querySelector('#a-page');
+    const servicesMenu = document.querySelector('#s-page');
+    const teamMenu = document.querySelector('#t-page');
+    const benMenu = document.querySelector('#b-page');
+    const tesmMenu = document.querySelector('#tes-page');
+    const conMenu = document.querySelector('#c-page');
     let scrollPos = window.scrollY;
     // console.log(scrollPos);
   
     // adds 'highlight' class to my menu items
-    if (window.innerWidth > 960 && scrollPos < 600) {
+    if (window.innerWidth > 960 && scrollPos < 300) {
       homeMenu.classList.add('highlight');
       aboutMenu.classList.remove('highlight');
       return;
-    } else if (window.innerWidth > 960 && scrollPos < 1400) {
+    } else if (window.innerWidth > 960 && scrollPos < 430) {
       aboutMenu.classList.add('highlight');
       homeMenu.classList.remove('highlight');
       servicesMenu.classList.remove('highlight');
       teamMenu.classList.remove('highlight');
       return;
-    } else if (window.innerWidth > 960 && scrollPos < 2600) {
+    } else if (window.innerWidth > 960 && scrollPos < 2000) {
       servicesMenu.classList.add('highlight');
       teamMenu.classList.remove('highlight');
       aboutMenu.classList.remove('highlight');
       return;
-    } else if (window.innerWidth > 960 && scrollPos < 8000) {
+    } else if (window.innerWidth > 960 && scrollPos < 5000) {
         teamMenu.classList.add('highlight');
         servicesMenu.classList.remove('highlight');
         aboutMenu.classList.remove('highlight');
-        return;}
+        return;
+      } else if (window.innerWidth > 960 && scrollPos < 5000) {
+          teamMenu.classList.add('highlight');
+          servicesMenu.classList.remove('highlight');
+          aboutMenu.classList.remove('highlight');
+          return;
+        }else if (window.innerWidth > 960 && scrollPos < 5000) {
+          teamMenu.classList.add('highlight');
+          servicesMenu.classList.remove('highlight');
+          aboutMenu.classList.remove('highlight');
+          return;
+        }else if (window.innerWidth > 960 && scrollPos < 5000) {
+          teamMenu.classList.add('highlight');
+          servicesMenu.classList.remove('highlight');
+          aboutMenu.classList.remove('highlight');
+          return;}
   
     if ((elem && window.innerWIdth < 960 && scrollPos < 600) || elem) {
       elem.classList.remove('highlight');
