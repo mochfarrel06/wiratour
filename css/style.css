@@ -316,7 +316,7 @@ section{
   }
   
 .car-1 {
-    background-image: url(../images/a2.png);
+    background-image: url(../images/mobil1.png);
     background-size: cover;
     max-height: 150px;
     
@@ -689,6 +689,9 @@ section{
     }
     .slider{
         height: 270px;
+    }
+    .rent-car{
+        justify-content: space-around;
     }
 }
 
