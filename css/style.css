@@ -565,8 +565,7 @@ section{
     overflow: hidden;
 }
 
-.floating-wpp .floating-wpp-button img,
-.floating-wpp .floating-wpp-button svg {
+.floating-wpp .floating-wpp-button {
     position: absolute;
     width: 100%;
     height: auto;
@@ -575,10 +574,14 @@ section{
     left: 50%;
     transform: translate3d(-50%, -50%, 0);
     border-radius: 50%;
+    background-size: cover;
+    background-image: url(../images/whatsapp-logo-png-2283.png);
+    margin: 0px 30px;
+    
 }
 
 .floating-wpp:hover {
-    bottom: 37px;
+    bottom: 40px;
 }
 
 .floating-wpp:hover .floating-wpp-button {
