@@ -140,13 +140,14 @@ section{
 }
 
 .home-text h1{
-    font-size: var(--big-font);
+    font-size: 2.24rem;
     color: var(--main-color);
 }
 
 .home-text h3{
-    font-size: var(--h3-font);
+    font-size: 0.9rem;
     margin: 1rem 0 1rem;
+    font-weight: 500;
 }
 
 .home-text a{
@@ -483,7 +484,7 @@ section{
  
   .card-pros {
     background-color: white;
-    color: black;
+    color: #261C2C;
     width: 300px;
     height: 200px;
     margin: 10px;
