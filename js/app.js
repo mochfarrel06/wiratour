@@ -50,16 +50,22 @@ const highlightMenu = () => {
         teamMenu.classList.remove('highlight');
           servicesMenu.classList.remove('highlight');
           aboutMenu.classList.remove('highlight');
+          tesMenu.classList.remove('highlight');
+          
           return;
-        }else if (window.innerWidth > 960 && scrollPos < 5000) {
-          teamMenu.classList.add('highlight');
+        }else if (window.innerWidth > 960 && scrollPos < 3500) {
+          tesMenu.classList.add('highlight');
           servicesMenu.classList.remove('highlight');
           aboutMenu.classList.remove('highlight');
+          benMenu.classList.remove('highlight');
+          conMenu.classList.remove('highlight');
           return;
-        }else if (window.innerWidth > 960 && scrollPos < 5000) {
-          teamMenu.classList.add('highlight');
+        }else if (window.innerWidth > 960 && scrollPos < 4000) {
+          conMenu.classList.add('highlight');
           servicesMenu.classList.remove('highlight');
           aboutMenu.classList.remove('highlight');
+          benMenu.classList.remove('highlight');
+          tesMenu.classList.remove('highlight');
           return;}
   
     if ((elem && window.innerWIdth < 960 && scrollPos < 600) || elem) {
