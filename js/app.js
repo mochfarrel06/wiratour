@@ -53,14 +53,14 @@ const highlightMenu = () => {
           tesMenu.classList.remove('highlight');
           
           return;
-        }else if (window.innerWidth > 960 && scrollPos < 3500) {
+        }else if (window.innerWidth > 960 && scrollPos < 3700) {
           tesMenu.classList.add('highlight');
           servicesMenu.classList.remove('highlight');
           aboutMenu.classList.remove('highlight');
           benMenu.classList.remove('highlight');
           conMenu.classList.remove('highlight');
           return;
-        }else if (window.innerWidth > 960 && scrollPos < 4000) {
+        }else if (window.innerWidth > 960 && scrollPos < 4400) {
           conMenu.classList.add('highlight');
           servicesMenu.classList.remove('highlight');
           aboutMenu.classList.remove('highlight');
