@@ -8,72 +8,7 @@ setInterval(function(){
     if(counter > 4){
         counter = 1;
     }
-}, 5000);
-
-// Show active menu when scrolling
-const highlightMenu = () => {
-    const elem = document.querySelector('.highlight');
-    const homeMenu = document.querySelector('#h-page');
-    const aboutMenu = document.querySelector('#a-page');
-    const servicesMenu = document.querySelector('#s-page');
-    const teamMenu = document.querySelector('#t-page');
-    const benMenu = document.querySelector('#b-page');
-    const tesMenu = document.querySelector('#tes-page');
-    const conMenu = document.querySelector('#c-page');
-    let scrollPos = window.scrollY;
-    // console.log(scrollPos);
-  
-    // adds 'highlight' class to my menu items
-    if (window.innerWidth > 960 && scrollPos < 300) {
-      homeMenu.classList.add('highlight');
-      aboutMenu.classList.remove('highlight');
-      return;
-    } else if (window.innerWidth > 960 && scrollPos < 430) {
-      aboutMenu.classList.add('highlight');
-      homeMenu.classList.remove('highlight');
-      servicesMenu.classList.remove('highlight');
-      teamMenu.classList.remove('highlight');
-      return;
-    } else if (window.innerWidth > 960 && scrollPos < 2000) {
-      servicesMenu.classList.add('highlight');
-      teamMenu.classList.remove('highlight');
-      aboutMenu.classList.remove('highlight');
-      return;
-    } else if (window.innerWidth > 960 && scrollPos < 2600) {
-        teamMenu.classList.add('highlight');
-        servicesMenu.classList.remove('highlight');
-        aboutMenu.classList.remove('highlight');
-        benMenu.classList.remove('highlight');
-        return;
-      } else if (window.innerWidth > 960 && scrollPos < 3300) {
-        benMenu.classList.add('highlight');
-        teamMenu.classList.remove('highlight');
-          servicesMenu.classList.remove('highlight');
-          aboutMenu.classList.remove('highlight');
-          tesMenu.classList.remove('highlight');
-          
-          return;
-        }else if (window.innerWidth > 960 && scrollPos < 3700) {
-          tesMenu.classList.add('highlight');
-          servicesMenu.classList.remove('highlight');
-          aboutMenu.classList.remove('highlight');
-          benMenu.classList.remove('highlight');
-          conMenu.classList.remove('highlight');
-          return;
-        }else if (window.innerWidth > 960 && scrollPos < 4400) {
-          conMenu.classList.add('highlight');
-          servicesMenu.classList.remove('highlight');
-          aboutMenu.classList.remove('highlight');
-          benMenu.classList.remove('highlight');
-          tesMenu.classList.remove('highlight');
-          return;}
-  
-    if ((elem && window.innerWIdth < 960 && scrollPos < 600) || elem) {
-      elem.classList.remove('highlight');
-    }
-  };
-  window.addEventListener('scroll', highlightMenu);
-  window.addEventListener('click', highlightMenu);
+}, 2000);
 
 // Faqs
 const accor = document.querySelectorAll(".accordion-item-header");
