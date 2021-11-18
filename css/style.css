@@ -351,22 +351,22 @@ section{
     max-height: 150px;
   }
 .car-7{
-    background-image: url(../images/mobil3.png);
+    background-image: url(../images/c.png);
     background-size: cover;
     max-height: 150px;
   }
 .car-8{
-    background-image: url(../images/mobil1.png);
+    background-image: url(../images/lx.png);
     background-size: cover;
     max-height: 150px;
   }
 .car-9{
-    background-image: url(../images/mobil1.png);
+    background-image: url(../images/ay.png);
     background-size: cover;
     max-height: 150px;
 }
 .car-10{
-    background-image: url(../images/mobil1.png);
+    background-image: url(../images/ag.png);
     background-size: cover;
     max-height: 150px;
     background-color: var(--text-color);
