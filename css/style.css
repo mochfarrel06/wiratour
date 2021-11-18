@@ -316,14 +316,14 @@ section{
   }
   
 .car-1 {
-    background-image: url(../images/mobil1.png);
+    background-image: url(../images/xsa.png);
     background-size: cover;
     max-height: 150px;
     
 }
   
 .car-2 {
-    background-image: url(../images/mobil1.png);
+    background-image: url(../images/xx.png);
     background-size: cover;
     max-height: 150px;
     
@@ -468,7 +468,8 @@ section{
     padding-top: 100px;
     color: var(--text-color);
     background-color: var(--bg-color);
-    font-size: 50px;
+    font-size: var(--h2-font);
+    color: var(--main-color);
     margin-top: -50px;
   }
   .pros-container{
@@ -499,6 +500,7 @@ section{
     justify-content: center;
     align-items: center;
     text-align: center;
+    
   }
   .card-pros p {
     justify-content: center;
@@ -506,7 +508,7 @@ section{
     text-align: center;
   }
   .card-pros:hover{
-    background-color: black;
+    background-color: var(--text-color);
     color: white;
     transition: 0.3s all ease;
   }
@@ -593,7 +595,7 @@ section{
 /* Akhir testi */
 
 
-/*whatsapp*/
+/*whatsapp
 .floating-wpp {
     position: fixed;
     bottom: 15px;
@@ -634,7 +636,7 @@ section{
 
 .floating-wpp:hover .floating-wpp-button {
     box-shadow: 1px 2px 8px rgba(60, 60, 60, 0.4);
-}
+}*/
 
 /* Start contact */
 .contact{
@@ -698,7 +700,8 @@ section{
 }
 
 .highlight{
-    border-bottom: 6px solid #1CC201;
+    border-bottom: 6px solid var(--main-color);
+}
     margin-bottom: 2px;
   }
 @media(max-width: 1100px){
