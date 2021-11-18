@@ -330,23 +330,23 @@ section{
 }
   
 .car-3{
-    background-image: url(../images/mobil1.png);
+    background-image: url(../images/avv.png);
     background-size: cover;
     max-height: 150px;
 }
   
 .car-4{
-    background-image: url(../images/mobil3.png);
+    background-image: url(../images/inv.png);
     background-size: cover;
     max-height: 150px;
   }
 .car-5{
-    background-image: url(../images/mobil1.png);
+    background-image: url(../images/xe.png);
     background-size: cover;
     max-height: 150px;
 }
 .car-6{
-    background-image: url(../images/mobil3.png);
+    background-image: url(../images/si.png);
     background-size: cover;
     max-height: 150px;
   }
