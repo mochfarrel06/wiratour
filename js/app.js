@@ -18,7 +18,7 @@ const highlightMenu = () => {
     const servicesMenu = document.querySelector('#s-page');
     const teamMenu = document.querySelector('#t-page');
     const benMenu = document.querySelector('#b-page');
-    const tesmMenu = document.querySelector('#tes-page');
+    const tesMenu = document.querySelector('#tes-page');
     const conMenu = document.querySelector('#c-page');
     let scrollPos = window.scrollY;
     // console.log(scrollPos);
@@ -39,13 +39,15 @@ const highlightMenu = () => {
       teamMenu.classList.remove('highlight');
       aboutMenu.classList.remove('highlight');
       return;
-    } else if (window.innerWidth > 960 && scrollPos < 5000) {
+    } else if (window.innerWidth > 960 && scrollPos < 2600) {
         teamMenu.classList.add('highlight');
         servicesMenu.classList.remove('highlight');
         aboutMenu.classList.remove('highlight');
+        benMenu.classList.remove('highlight');
         return;
-      } else if (window.innerWidth > 960 && scrollPos < 5000) {
-          teamMenu.classList.add('highlight');
+      } else if (window.innerWidth > 960 && scrollPos < 3300) {
+        benMenu.classList.add('highlight');
+        teamMenu.classList.remove('highlight');
           servicesMenu.classList.remove('highlight');
           aboutMenu.classList.remove('highlight');
           return;
